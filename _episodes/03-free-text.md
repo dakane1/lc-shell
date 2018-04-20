@@ -23,8 +23,31 @@ can borrow what they do as an introduction to working with these more complex fi
 So for this final exercise we're going to leap forward a little in terms 
 of difficulty to a scenario where we won't learn about everything that 
 is happening in detail or discuss at length each command. We're going 
-to prepare and pull apart texts to demonstrate some of the potential applications of the Unix shell. And where commands we've learnt about are used, 
-I've left some of the figuring out to do to you - so please refer to your notes if you get stuck!
+to prepare and pull apart texts to demonstrate some of the potential applications of the Unix shell. I'm going to demonstrate how to work with free text and then after the demo I am going to ask you to pair up with someone, choose a text and try the steps with one of three documents.  Please take notes so you will be able to do the hands on part!
+
+## Demonstration Text: 
+
+### Grabbing a text, cleaning it up
+
+
+We're going to work with the `pride.txt` file.
+You should (still) be working in the `shell-lesson` directory.
+
+Let's look at the file. 
+
+{: .output}
+
+We're going to start by using the `sed` command. The command allows you to edit files directly.
+
+~~~
+$ sed '4690,5019d' pride.txt > pride-nofoot.txt 
+~~~
+{: .bash}
+
+The command `sed` in combination with the `d` 
+value will look at `gulliver.txt` and delete all 
+values between the rows specified. The `>` action then 
+prompts the script to this edited text to the new file specified.
 
 Before going any further, speak to the person next to and choose which type of text you'd like to work on together. You have three options:
 
